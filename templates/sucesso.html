@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro concluído</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="pagina">
+    <div class="cartao cartao--centralizado">
+      <div class="icone-sucesso" aria-hidden="true">&#10003;</div>
+      <h1 id="mensagem-sucesso">Cadastro realizado com sucesso</h1>
+      <p class="subtitulo">Seus dados foram salvos.</p>
+      <a class="botao" id="link-novo-cadastro" href="{{ url_for('index') }}">Fazer novo cadastro</a>
+    </div>
+  </main>
+</body>
+</html>
