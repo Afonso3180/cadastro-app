@@ -20,8 +20,8 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Em produção, defina essas variáveis de ambiente em vez de usar os valores padrão.
-app.secret_key = os.environ.get("SECRET_KEY", "chave-de-desenvolvimento-troque-em-producao")
-ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "token-de-desenvolvimento-troque-em-producao")
+app.secret_key = os.environ.get("SECRET_KEY", "0c014b105c16194c6b95a14fa3f41ae8")
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "928617b7b1b0f5de82d150ce0b9b759f")
 
 CSV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cadastros.csv")
 CSV_HEADER = ["nome", "cpf", "email", "data_hora"]
